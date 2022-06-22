@@ -2,7 +2,7 @@
 
 Seja bem vindo! Neste quarto desafio do Treinamento "The Odin Project", desenvolvi o famoso brinquedo conhecido como "Traço Mágico" no Brasil. 
 
-Ao passar o mouse por cima de cada quadrado, eles são pintados de forma permanente. Implementei, ainda, uma barra de seleção que você pode deslizar para selecionar o tamanho desejado do brinquedo, podendo escolher de 1x1 até 100x100.
+Ao passar o mouse por cima de cada quadrado, eles são pintados, como no brinquedo real. Implementei, ainda, uma barra de seleção que você pode deslizar para selecionar o tamanho desejado do brinquedo, podendo escolher de 1x1 até 100x100.
 
 Você pode conferir o projeto em: [Etch A Sketch](https://gabrielcarvalhoc.github.io/odin-etch-a-sketch/)
 
