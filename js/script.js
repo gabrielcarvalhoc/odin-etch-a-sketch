@@ -6,6 +6,14 @@ function createGrid() {
         squareDiv.classList.add('grid-item');
         container.appendChild(squareDiv);
     }
+
+    const squareDivs = document.querySelectorAll('.grid-item');
+
+    squareDivs.forEach((squareDiv) => {
+        squareDiv.addEventListener('mouseenter', () => {
+            squareDiv.style.backgroundColor = 'black';
+        });
+    });
 }
 
 createGrid();
