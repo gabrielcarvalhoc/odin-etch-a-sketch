@@ -1,10 +1,13 @@
 let container = document.querySelector('.grid-container');
+let gridSize = document.querySelector('.grid-size');
 let input = document.querySelector('#squares-input');
 let btn = document.querySelector('.btn-squares');
 
-let squaresPerSide = 16;
+let squaresPerSide = input.value;
 
-function createGrid() {
+gridSize.textContent = `${squaresPerSide} x ${squaresPerSide}`;
+
+function createGrid(squaresPerSide) {
     container.innerHTML = '';
 
     container.style.gridTemplateColumns = 'auto '.repeat(squaresPerSide);
@@ -30,14 +33,14 @@ function createGrid() {
 
 function setSquaresPerSide() {
     btn.addEventListener('click', () => {
-        if (input.value <= 100) {
-            squaresPerSide = input.value;
-            createGrid();
-        } else {
-            swal('Oh No!', 'Please Choose a Number Less than 100.', 'error');
-        }
+        squaresPerSide = input.value;
+        createGrid(squaresPerSide);
     });
 }
 
-createGrid();
+input.addEventListener('input', () => {
+    gridSize.textContent = `${input.value} x ${input.value}`;
+});
+
+createGrid(squaresPerSide);
 setSquaresPerSide();
